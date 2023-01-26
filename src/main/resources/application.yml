@@ -1,1 +1,14 @@
-
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://130.162.157.215:5432/shock
+    username: shock
+    password: "Kth973897G@#$"
+    
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

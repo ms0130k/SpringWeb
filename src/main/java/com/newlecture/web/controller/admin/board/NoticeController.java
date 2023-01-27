@@ -13,18 +13,18 @@ import com.newlecture.web.service.NoticeService;
 @Controller("adminNoticeController")
 @RequestMapping("admin/board/notice/")
 public class NoticeController {
-    @Autowired
-    private NoticeService noticeService;
+//    @Autowired
+//    private NoticeService noticeService;
     
     @RequestMapping("list")
     public String list() {
-        List<NoticeView> list = noticeService.getList();
+//        List<NoticeView> list = noticeService.getList(0, null, null);
         return "admin.board.notice.list";
     }
     
     @RequestMapping("detail")
     public String detail() {
-        Notice notice = noticeService.get(1);
+//        Notice notice = noticeService.get(1);
         return "admin.board.notice.detail";
     }
     

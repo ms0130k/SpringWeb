@@ -4,9 +4,11 @@ import java.util.Date;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString(callSuper = true)
 public class NoticeView extends Notice {
     private String memberName;
 
@@ -18,5 +20,4 @@ public class NoticeView extends Notice {
         super(id, title, content, regdate, hit, pub, memberId);
         this.memberName = memberName;
     }
-    
 }
